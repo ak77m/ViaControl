@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3A3A4C86EE6048F9A9FA98B /* Pods_ViaControl__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58F1830B290F6B79BC22C46 /* Pods_ViaControl__macOS_.framework */; };
+		CD7BF695BB8E299A94D798F2 /* Pods_ViaControl__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A61BFEF236E85FC5AFD0C3A /* Pods_ViaControl__iOS_.framework */; };
+		FF19BBDB27D5F5240083688B /* ViaControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BBCB27D5F5220083688B /* ViaControlApp.swift */; };
+		FF19BBDC27D5F5240083688B /* ViaControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BBCB27D5F5220083688B /* ViaControlApp.swift */; };
+		FF19BBDF27D5F5240083688B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF19BBCD27D5F5240083688B /* Assets.xcassets */; };
+		FF19BBE027D5F5240083688B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF19BBCD27D5F5240083688B /* Assets.xcassets */; };
+		FF19BBEA27D5F94E0083688B /* TelnetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BBE927D5F94E0083688B /* TelnetManager.swift */; };
+		FF19BBEB27D5F94E0083688B /* TelnetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BBE927D5F94E0083688B /* TelnetManager.swift */; };
+		FF19BBEF27D614030083688B /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF19BBEE27D614030083688B /* NetworkExtension.framework */; };
+		FF19BBF227D6142D0083688B /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF19BBF127D6142D0083688B /* NetworkExtension.framework */; };
+		FF19BBF427D625870083688B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BBF327D625870083688B /* MainView.swift */; };
+		FF19BBF527D625870083688B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BBF327D625870083688B /* MainView.swift */; };
+		FF19BBF827D6288A0083688B /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BBF727D6288A0083688B /* Setup.swift */; };
+		FF19BBF927D6288A0083688B /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BBF727D6288A0083688B /* Setup.swift */; };
+		FF19BBFB27D7370B0083688B /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BBFA27D7370B0083688B /* Info.swift */; };
+		FF19BBFC27D7370B0083688B /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BBFA27D7370B0083688B /* Info.swift */; };
+		FF19BBFE27D742300083688B /* Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BBFD27D742300083688B /* Get.swift */; };
+		FF19BBFF27D742300083688B /* Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BBFD27D742300083688B /* Get.swift */; };
+		FF19BC0127D7423C0083688B /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC0027D7423C0083688B /* Set.swift */; };
+		FF19BC0227D7423C0083688B /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC0027D7423C0083688B /* Set.swift */; };
+		FF19BC0427D744610083688B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC0327D744610083688B /* Theme.swift */; };
+		FF19BC0527D744610083688B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC0327D744610083688B /* Theme.swift */; };
+		FF19BC0827D758120083688B /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = FF19BC0727D758120083688B /* Readme.md */; };
+		FF19BC0927D758120083688B /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = FF19BC0727D758120083688B /* Readme.md */; };
+		FF19BC0B27D759DC0083688B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FF19BC0A27D759DC0083688B /* .gitignore */; };
+		FF19BC0C27D759DC0083688B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FF19BC0A27D759DC0083688B /* .gitignore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18BB70067440508BD1AE228E /* Pods-ViaControl (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaControl (macOS).debug.xcconfig"; path = "Target Support Files/Pods-ViaControl (macOS)/Pods-ViaControl (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		5A61BFEF236E85FC5AFD0C3A /* Pods_ViaControl__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViaControl__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783FFB09FF24A16E3DE03F03 /* Pods-ViaControl (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaControl (iOS).debug.xcconfig"; path = "Target Support Files/Pods-ViaControl (iOS)/Pods-ViaControl (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		B58F1830B290F6B79BC22C46 /* Pods_ViaControl__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViaControl__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1CAFC6E27E2D67AB1EA343 /* Pods-ViaControl (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaControl (iOS).release.xcconfig"; path = "Target Support Files/Pods-ViaControl (iOS)/Pods-ViaControl (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		E59400C530EBA8A1710A66E3 /* Pods-ViaControl (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaControl (macOS).release.xcconfig"; path = "Target Support Files/Pods-ViaControl (macOS)/Pods-ViaControl (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		FF19BBCB27D5F5220083688B /* ViaControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaControlApp.swift; sourceTree = "<group>"; };
+		FF19BBCD27D5F5240083688B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF19BBD227D5F5240083688B /* ViaControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViaControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF19BBD827D5F5240083688B /* ViaControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViaControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF19BBDA27D5F5240083688B /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		FF19BBE927D5F94E0083688B /* TelnetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelnetManager.swift; sourceTree = "<group>"; };
+		FF19BBEC27D60BB40083688B /* ViaControl--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ViaControl--iOS--Info.plist"; sourceTree = "<group>"; };
+		FF19BBED27D60C010083688B /* ViaControl--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ViaControl--macOS--Info.plist"; sourceTree = "<group>"; };
+		FF19BBEE27D614030083688B /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		FF19BBF027D6142D0083688B /* ViaControl (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ViaControl (iOS).entitlements"; sourceTree = "<group>"; };
+		FF19BBF127D6142D0083688B /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/NetworkExtension.framework; sourceTree = DEVELOPER_DIR; };
+		FF19BBF327D625870083688B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FF19BBF727D6288A0083688B /* Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setup.swift; sourceTree = "<group>"; };
+		FF19BBFA27D7370B0083688B /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		FF19BBFD27D742300083688B /* Get.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Get.swift; sourceTree = "<group>"; };
+		FF19BC0027D7423C0083688B /* Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		FF19BC0327D744610083688B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		FF19BC0727D758120083688B /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		FF19BC0A27D759DC0083688B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF19BBCF27D5F5240083688B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7BF695BB8E299A94D798F2 /* Pods_ViaControl__iOS_.framework in Frameworks */,
+				FF19BBF227D6142D0083688B /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF19BBD527D5F5240083688B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A3A4C86EE6048F9A9FA98B /* Pods_ViaControl__macOS_.framework in Frameworks */,
+				FF19BBEF27D614030083688B /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFE8B07AA5CE2B22963FEE78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF19BBF127D6142D0083688B /* NetworkExtension.framework */,
+				FF19BBEE27D614030083688B /* NetworkExtension.framework */,
+				5A61BFEF236E85FC5AFD0C3A /* Pods_ViaControl__iOS_.framework */,
+				B58F1830B290F6B79BC22C46 /* Pods_ViaControl__macOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F05820F4E18B2F5D5D1047FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				783FFB09FF24A16E3DE03F03 /* Pods-ViaControl (iOS).debug.xcconfig */,
+				BF1CAFC6E27E2D67AB1EA343 /* Pods-ViaControl (iOS).release.xcconfig */,
+				18BB70067440508BD1AE228E /* Pods-ViaControl (macOS).debug.xcconfig */,
+				E59400C530EBA8A1710A66E3 /* Pods-ViaControl (macOS).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF19BBC527D5F5220083688B = {
+			isa = PBXGroup;
+			children = (
+				FF19BC0727D758120083688B /* Readme.md */,
+				FF19BC0A27D759DC0083688B /* .gitignore */,
+				FF19BBF027D6142D0083688B /* ViaControl (iOS).entitlements */,
+				FF19BBED27D60C010083688B /* ViaControl--macOS--Info.plist */,
+				FF19BBEC27D60BB40083688B /* ViaControl--iOS--Info.plist */,
+				FF19BBCA27D5F5220083688B /* Shared */,
+				FF19BBD927D5F5240083688B /* macOS */,
+				FF19BBD327D5F5240083688B /* Products */,
+				F05820F4E18B2F5D5D1047FC /* Pods */,
+				EFE8B07AA5CE2B22963FEE78 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF19BBCA27D5F5220083688B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FF19BBCB27D5F5220083688B /* ViaControlApp.swift */,
+				FF19BBF627D6258F0083688B /* View */,
+				FF19BBE927D5F94E0083688B /* TelnetManager.swift */,
+				FF19BC0627D745070083688B /* Style */,
+				FF19BBCD27D5F5240083688B /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FF19BBD327D5F5240083688B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF19BBD227D5F5240083688B /* ViaControl.app */,
+				FF19BBD827D5F5240083688B /* ViaControl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF19BBD927D5F5240083688B /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				FF19BBDA27D5F5240083688B /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		FF19BBF627D6258F0083688B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF19BBF327D625870083688B /* MainView.swift */,
+				FF19BBFD27D742300083688B /* Get.swift */,
+				FF19BC0027D7423C0083688B /* Set.swift */,
+				FF19BBFA27D7370B0083688B /* Info.swift */,
+				FF19BBF727D6288A0083688B /* Setup.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF19BC0627D745070083688B /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				FF19BC0327D744610083688B /* Theme.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF19BBD127D5F5240083688B /* ViaControl (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF19BBE327D5F5240083688B /* Build configuration list for PBXNativeTarget "ViaControl (iOS)" */;
+			buildPhases = (
+				A4D07C0063841091A4F0EF2C /* [CP] Check Pods Manifest.lock */,
+				FF19BBCE27D5F5240083688B /* Sources */,
+				FF19BBCF27D5F5240083688B /* Frameworks */,
+				FF19BBD027D5F5240083688B /* Resources */,
+				8EDA5B485A17C7D50A9DD24B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ViaControl (iOS)";
+			productName = "ViaControl (iOS)";
+			productReference = FF19BBD227D5F5240083688B /* ViaControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF19BBD727D5F5240083688B /* ViaControl (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF19BBE627D5F5240083688B /* Build configuration list for PBXNativeTarget "ViaControl (macOS)" */;
+			buildPhases = (
+				A9E80B388128F89E5C2BBEE2 /* [CP] Check Pods Manifest.lock */,
+				FF19BBD427D5F5240083688B /* Sources */,
+				FF19BBD527D5F5240083688B /* Frameworks */,
+				FF19BBD627D5F5240083688B /* Resources */,
+				CBDD69F2E224EFD111099035 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ViaControl (macOS)";
+			productName = "ViaControl (macOS)";
+			productReference = FF19BBD827D5F5240083688B /* ViaControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF19BBC627D5F5220083688B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					FF19BBD127D5F5240083688B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					FF19BBD727D5F5240083688B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FF19BBC927D5F5220083688B /* Build configuration list for PBXProject "ViaControl" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF19BBC527D5F5220083688B;
+			productRefGroup = FF19BBD327D5F5240083688B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF19BBD127D5F5240083688B /* ViaControl (iOS) */,
+				FF19BBD727D5F5240083688B /* ViaControl (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF19BBD027D5F5240083688B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF19BC0827D758120083688B /* Readme.md in Resources */,
+				FF19BC0B27D759DC0083688B /* .gitignore in Resources */,
+				FF19BBDF27D5F5240083688B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF19BBD627D5F5240083688B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF19BC0927D758120083688B /* Readme.md in Resources */,
+				FF19BC0C27D759DC0083688B /* .gitignore in Resources */,
+				FF19BBE027D5F5240083688B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8EDA5B485A17C7D50A9DD24B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViaControl (iOS)/Pods-ViaControl (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViaControl (iOS)/Pods-ViaControl (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViaControl (iOS)/Pods-ViaControl (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4D07C0063841091A4F0EF2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViaControl (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9E80B388128F89E5C2BBEE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViaControl (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBDD69F2E224EFD111099035 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViaControl (macOS)/Pods-ViaControl (macOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViaControl (macOS)/Pods-ViaControl (macOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViaControl (macOS)/Pods-ViaControl (macOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF19BBCE27D5F5240083688B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF19BBF427D625870083688B /* MainView.swift in Sources */,
+				FF19BC0427D744610083688B /* Theme.swift in Sources */,
+				FF19BBDB27D5F5240083688B /* ViaControlApp.swift in Sources */,
+				FF19BBFE27D742300083688B /* Get.swift in Sources */,
+				FF19BC0127D7423C0083688B /* Set.swift in Sources */,
+				FF19BBFB27D7370B0083688B /* Info.swift in Sources */,
+				FF19BBF827D6288A0083688B /* Setup.swift in Sources */,
+				FF19BBEA27D5F94E0083688B /* TelnetManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF19BBD427D5F5240083688B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF19BBF527D625870083688B /* MainView.swift in Sources */,
+				FF19BC0527D744610083688B /* Theme.swift in Sources */,
+				FF19BBDC27D5F5240083688B /* ViaControlApp.swift in Sources */,
+				FF19BBFF27D742300083688B /* Get.swift in Sources */,
+				FF19BC0227D7423C0083688B /* Set.swift in Sources */,
+				FF19BBFC27D7370B0083688B /* Info.swift in Sources */,
+				FF19BBF927D6288A0083688B /* Setup.swift in Sources */,
+				FF19BBEB27D5F94E0083688B /* TelnetManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FF19BBE127D5F5240083688B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF19BBE227D5F5240083688B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FF19BBE427D5F5240083688B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 783FFB09FF24A16E3DE03F03 /* Pods-ViaControl (iOS).debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ViaControl (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V6D8W25533;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ViaControl--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak77m.ViaControl;
+				PRODUCT_NAME = ViaControl;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF19BBE527D5F5240083688B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF1CAFC6E27E2D67AB1EA343 /* Pods-ViaControl (iOS).release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ViaControl (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V6D8W25533;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ViaControl--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak77m.ViaControl;
+				PRODUCT_NAME = ViaControl;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF19BBE727D5F5240083688B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18BB70067440508BD1AE228E /* Pods-ViaControl (macOS).debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V6D8W25533;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ViaControl--macOS--Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak77m.ViaControl;
+				PRODUCT_NAME = ViaControl;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FF19BBE827D5F5240083688B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59400C530EBA8A1710A66E3 /* Pods-ViaControl (macOS).release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V6D8W25533;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ViaControl--macOS--Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak77m.ViaControl;
+				PRODUCT_NAME = ViaControl;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF19BBC927D5F5220083688B /* Build configuration list for PBXProject "ViaControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF19BBE127D5F5240083688B /* Debug */,
+				FF19BBE227D5F5240083688B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF19BBE327D5F5240083688B /* Build configuration list for PBXNativeTarget "ViaControl (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF19BBE427D5F5240083688B /* Debug */,
+				FF19BBE527D5F5240083688B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF19BBE627D5F5240083688B /* Build configuration list for PBXNativeTarget "ViaControl (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF19BBE727D5F5240083688B /* Debug */,
+				FF19BBE827D5F5240083688B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF19BBC627D5F5220083688B /* Project object */;
+}

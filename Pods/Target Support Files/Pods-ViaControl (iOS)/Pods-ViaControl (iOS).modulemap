@@ -1,0 +1,6 @@
+framework module Pods_ViaControl__iOS_ {
+  umbrella header "Pods-ViaControl (iOS)-umbrella.h"
+
+  export *
+  module * { export * }
+}
