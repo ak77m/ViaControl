@@ -10,27 +10,32 @@ import SwiftUI
 struct MainView: View {
     @Environment(\.managedObjectContext) private var viewContext
     
+    
     init(){
            Theme.navigationBarColors(background: .darkGray, titleColor: .white)
            UITabBar.appearance().backgroundColor = UIColor.darkGray
+           UITabBar.appearance().barTintColor = UIColor.green
+           UITabBar.appearance().unselectedItemTintColor = UIColor.white
+           UITabBar.appearance().tintColor = UIColor.green
         }
     
-    @StateObject var request = TelnetManager(host: "192.168.101.17", port: 9982)
+    @EnvironmentObject var info : InfoManager
+    @StateObject var request = TelnetManager()
+    
+    
     @State private var selection = 0
-    let requestStr = "<P><UN>su</UN><Pwd>supass</Pwd><Cmd>Login</Cmd><P1></P1><P 2></P2><P3></P3><P4></P4><P5></P5><P6></P6><P7></P7><P8></P8><P9></P9> <P10></P10></P>"
     
     var body: some View {
         ZStack {
-            NavigationView{
                 TabView(selection: $selection){
-                    Info()
+                    Info(request: request)
                         .tag(0)
                         .tabItem {
                             Image(systemName: "info.circle")
                             Text("Info")
                         }
-                    Get()
-                        .tag(0)
+                    Get(request: request)
+                        .tag(1)
                         .tabItem {
                             Image(systemName: "square.and.arrow.down.on.square")
                             Text("Get")
@@ -38,38 +43,48 @@ struct MainView: View {
                     Spacer ()
                    
                     Set()
-                        .tag(0)
+                        .tag(2)
                         .tabItem {
                             Image(systemName: "square.and.arrow.up")
                             Text("Set")
                         }
                     Setup()
-                        .tag(0)
+                        .tag(3)
                         .tabItem {
                             Image(systemName: "gear")
                             Text("Setup")
                         }
                 }
-                .background(Color.purple)
-                .navigationBarTitle(request.host)
+                
                 .navigationBarTitleDisplayMode(.inline)
-            }
+                //.accentColor(.green)
+                .navigationViewStyle(StackNavigationViewStyle())
+            
             VStack {
                 Spacer()
                 // Connection button
-                Button(action: { request.login() }) {
-                    Image(systemName: "point.3.connected.trianglepath.dotted")
+//                Button(action: {
+//                    request.connectTo = info.activeHost
+//                    request.login()
+     //           }) {
+                   Image(systemName: "point.3.connected.trianglepath.dotted")
                         .renderingMode(.original)
                         .resizable()
                         .frame(width: 30, height: 30, alignment: .center)
                         .padding()
+                        .background(Circle().fill(.gray))
                         .overlay(Circle()
                                     .stroke(.foreground, lineWidth: 4))
-                        .foregroundColor(.green)
-                        
-                }
+                        .foregroundColor(request.isLogged ? .green : .white)
+                        .onTapGesture {
+                            request.connectTo = info.activeHost
+                            request.login()
+                        }
+             //   }
+                
             }
         }
+        //.foregroundColor(.white)
     }
 }
     struct MainView_Previews: PreviewProvider {

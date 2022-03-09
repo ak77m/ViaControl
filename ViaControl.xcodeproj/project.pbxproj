@@ -11,8 +11,6 @@
 		CD7BF695BB8E299A94D798F2 /* Pods_ViaControl__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A61BFEF236E85FC5AFD0C3A /* Pods_ViaControl__iOS_.framework */; };
 		FF19BBDB27D5F5240083688B /* ViaControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BBCB27D5F5220083688B /* ViaControlApp.swift */; };
 		FF19BBDC27D5F5240083688B /* ViaControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BBCB27D5F5220083688B /* ViaControlApp.swift */; };
-		FF19BBDF27D5F5240083688B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF19BBCD27D5F5240083688B /* Assets.xcassets */; };
-		FF19BBE027D5F5240083688B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF19BBCD27D5F5240083688B /* Assets.xcassets */; };
 		FF19BBEA27D5F94E0083688B /* TelnetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BBE927D5F94E0083688B /* TelnetManager.swift */; };
 		FF19BBEB27D5F94E0083688B /* TelnetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BBE927D5F94E0083688B /* TelnetManager.swift */; };
 		FF19BBEF27D614030083688B /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF19BBEE27D614030083688B /* NetworkExtension.framework */; };
@@ -33,6 +31,22 @@
 		FF19BC0927D758120083688B /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = FF19BC0727D758120083688B /* Readme.md */; };
 		FF19BC0B27D759DC0083688B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FF19BC0A27D759DC0083688B /* .gitignore */; };
 		FF19BC0C27D759DC0083688B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FF19BC0A27D759DC0083688B /* .gitignore */; };
+		FF19BC0E27D763200083688B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF19BC0D27D763200083688B /* Assets.xcassets */; };
+		FF19BC0F27D763200083688B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF19BC0D27D763200083688B /* Assets.xcassets */; };
+		FF19BC1827D779B70083688B /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC1727D779B70083688B /* Host.swift */; };
+		FF19BC1927D779B70083688B /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC1727D779B70083688B /* Host.swift */; };
+		FF19BC1B27D77B950083688B /* InfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC1A27D77B950083688B /* InfoManager.swift */; };
+		FF19BC1C27D77B950083688B /* InfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC1A27D77B950083688B /* InfoManager.swift */; };
+		FF19BC1E27D77D230083688B /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC1D27D77D230083688B /* UserDefaults+Ext.swift */; };
+		FF19BC1F27D77D230083688B /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC1D27D77D230083688B /* UserDefaults+Ext.swift */; };
+		FF19BC2327D780210083688B /* AddNewHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC2227D780210083688B /* AddNewHost.swift */; };
+		FF19BC2427D780210083688B /* AddNewHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC2227D780210083688B /* AddNewHost.swift */; };
+		FF19BC2627D7810E0083688B /* EntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC2527D7810E0083688B /* EntryField.swift */; };
+		FF19BC2727D7810E0083688B /* EntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC2527D7810E0083688B /* EntryField.swift */; };
+		FF19BC2927D7BB760083688B /* HostsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC2827D7BB760083688B /* HostsList.swift */; };
+		FF19BC2A27D7BB760083688B /* HostsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC2827D7BB760083688B /* HostsList.swift */; };
+		FF19BC2D27D7DA210083688B /* Telnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC2C27D7DA210083688B /* Telnet.swift */; };
+		FF19BC2E27D7DA210083688B /* Telnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC2C27D7DA210083688B /* Telnet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +57,6 @@
 		BF1CAFC6E27E2D67AB1EA343 /* Pods-ViaControl (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaControl (iOS).release.xcconfig"; path = "Target Support Files/Pods-ViaControl (iOS)/Pods-ViaControl (iOS).release.xcconfig"; sourceTree = "<group>"; };
 		E59400C530EBA8A1710A66E3 /* Pods-ViaControl (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViaControl (macOS).release.xcconfig"; path = "Target Support Files/Pods-ViaControl (macOS)/Pods-ViaControl (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		FF19BBCB27D5F5220083688B /* ViaControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaControlApp.swift; sourceTree = "<group>"; };
-		FF19BBCD27D5F5240083688B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF19BBD227D5F5240083688B /* ViaControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViaControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF19BBD827D5F5240083688B /* ViaControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViaControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF19BBDA27D5F5240083688B /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
@@ -61,6 +74,14 @@
 		FF19BC0327D744610083688B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		FF19BC0727D758120083688B /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		FF19BC0A27D759DC0083688B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		FF19BC0D27D763200083688B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../Downloads/AppIcons-2/Assets.xcassets"; sourceTree = "<group>"; };
+		FF19BC1727D779B70083688B /* Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
+		FF19BC1A27D77B950083688B /* InfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoManager.swift; sourceTree = "<group>"; };
+		FF19BC1D27D77D230083688B /* UserDefaults+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ext.swift"; sourceTree = "<group>"; };
+		FF19BC2227D780210083688B /* AddNewHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewHost.swift; sourceTree = "<group>"; };
+		FF19BC2527D7810E0083688B /* EntryField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryField.swift; sourceTree = "<group>"; };
+		FF19BC2827D7BB760083688B /* HostsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostsList.swift; sourceTree = "<group>"; };
+		FF19BC2C27D7DA210083688B /* Telnet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telnet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,10 +148,12 @@
 			isa = PBXGroup;
 			children = (
 				FF19BBCB27D5F5220083688B /* ViaControlApp.swift */,
-				FF19BBF627D6258F0083688B /* View */,
-				FF19BBE927D5F94E0083688B /* TelnetManager.swift */,
+				FF19BC2B27D7D9F50083688B /* Models */,
+				FF19BC1027D763FD0083688B /* View Models */,
+				FF19BBF627D6258F0083688B /* Views */,
+				FF19BC2027D77D2D0083688B /* Extensions */,
 				FF19BC0627D745070083688B /* Style */,
-				FF19BBCD27D5F5240083688B /* Assets.xcassets */,
+				FF19BC0D27D763200083688B /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -152,16 +175,16 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		FF19BBF627D6258F0083688B /* View */ = {
+		FF19BBF627D6258F0083688B /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				FF19BBF327D625870083688B /* MainView.swift */,
+				FF19BBFA27D7370B0083688B /* Info.swift */,
 				FF19BBFD27D742300083688B /* Get.swift */,
 				FF19BC0027D7423C0083688B /* Set.swift */,
-				FF19BBFA27D7370B0083688B /* Info.swift */,
-				FF19BBF727D6288A0083688B /* Setup.swift */,
+				FF19BC2127D780080083688B /* Setup */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FF19BC0627D745070083688B /* Style */ = {
@@ -170,6 +193,43 @@
 				FF19BC0327D744610083688B /* Theme.swift */,
 			);
 			path = Style;
+			sourceTree = "<group>";
+		};
+		FF19BC1027D763FD0083688B /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF19BBE927D5F94E0083688B /* TelnetManager.swift */,
+				FF19BC1A27D77B950083688B /* InfoManager.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		FF19BC2027D77D2D0083688B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FF19BC1D27D77D230083688B /* UserDefaults+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FF19BC2127D780080083688B /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				FF19BBF727D6288A0083688B /* Setup.swift */,
+				FF19BC2827D7BB760083688B /* HostsList.swift */,
+				FF19BC2227D780210083688B /* AddNewHost.swift */,
+				FF19BC2527D7810E0083688B /* EntryField.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		FF19BC2B27D7D9F50083688B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF19BC1727D779B70083688B /* Host.swift */,
+				FF19BC2C27D7DA210083688B /* Telnet.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +317,7 @@
 			files = (
 				FF19BC0827D758120083688B /* Readme.md in Resources */,
 				FF19BC0B27D759DC0083688B /* .gitignore in Resources */,
-				FF19BBDF27D5F5240083688B /* Assets.xcassets in Resources */,
+				FF19BC0E27D763200083688B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +327,7 @@
 			files = (
 				FF19BC0927D758120083688B /* Readme.md in Resources */,
 				FF19BC0C27D759DC0083688B /* .gitignore in Resources */,
-				FF19BBE027D5F5240083688B /* Assets.xcassets in Resources */,
+				FF19BC0F27D763200083688B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,13 +419,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF19BC2627D7810E0083688B /* EntryField.swift in Sources */,
 				FF19BBF427D625870083688B /* MainView.swift in Sources */,
+				FF19BC1B27D77B950083688B /* InfoManager.swift in Sources */,
+				FF19BC2D27D7DA210083688B /* Telnet.swift in Sources */,
 				FF19BC0427D744610083688B /* Theme.swift in Sources */,
 				FF19BBDB27D5F5240083688B /* ViaControlApp.swift in Sources */,
+				FF19BC2327D780210083688B /* AddNewHost.swift in Sources */,
 				FF19BBFE27D742300083688B /* Get.swift in Sources */,
 				FF19BC0127D7423C0083688B /* Set.swift in Sources */,
 				FF19BBFB27D7370B0083688B /* Info.swift in Sources */,
+				FF19BC2927D7BB760083688B /* HostsList.swift in Sources */,
+				FF19BC1827D779B70083688B /* Host.swift in Sources */,
 				FF19BBF827D6288A0083688B /* Setup.swift in Sources */,
+				FF19BC1E27D77D230083688B /* UserDefaults+Ext.swift in Sources */,
 				FF19BBEA27D5F94E0083688B /* TelnetManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,13 +441,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF19BC2727D7810E0083688B /* EntryField.swift in Sources */,
 				FF19BBF527D625870083688B /* MainView.swift in Sources */,
+				FF19BC1C27D77B950083688B /* InfoManager.swift in Sources */,
+				FF19BC2E27D7DA210083688B /* Telnet.swift in Sources */,
 				FF19BC0527D744610083688B /* Theme.swift in Sources */,
 				FF19BBDC27D5F5240083688B /* ViaControlApp.swift in Sources */,
+				FF19BC2427D780210083688B /* AddNewHost.swift in Sources */,
 				FF19BBFF27D742300083688B /* Get.swift in Sources */,
 				FF19BC0227D7423C0083688B /* Set.swift in Sources */,
 				FF19BBFC27D7370B0083688B /* Info.swift in Sources */,
+				FF19BC2A27D7BB760083688B /* HostsList.swift in Sources */,
+				FF19BC1927D779B70083688B /* Host.swift in Sources */,
 				FF19BBF927D6288A0083688B /* Setup.swift in Sources */,
+				FF19BC1F27D77D230083688B /* UserDefaults+Ext.swift in Sources */,
 				FF19BBEB27D5F94E0083688B /* TelnetManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

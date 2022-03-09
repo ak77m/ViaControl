@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct ViaControlApp: App {
+    @StateObject var info = InfoManager()
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MainView().environmentObject(info)
         }
     }
 }
