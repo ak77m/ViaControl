@@ -47,6 +47,10 @@
 		FF19BC2A27D7BB760083688B /* HostsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC2827D7BB760083688B /* HostsList.swift */; };
 		FF19BC2D27D7DA210083688B /* Telnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC2C27D7DA210083688B /* Telnet.swift */; };
 		FF19BC2E27D7DA210083688B /* Telnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC2C27D7DA210083688B /* Telnet.swift */; };
+		FF19BC3027D8C7E80083688B /* Wol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC2F27D8C7E80083688B /* Wol.swift */; };
+		FF19BC3127D8C7E80083688B /* Wol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF19BC2F27D8C7E80083688B /* Wol.swift */; };
+		FF6EE7AF27D92C45006E40B2 /* RequestString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EE7AE27D92C45006E40B2 /* RequestString.swift */; };
+		FF6EE7B027D92C45006E40B2 /* RequestString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EE7AE27D92C45006E40B2 /* RequestString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +86,8 @@
 		FF19BC2527D7810E0083688B /* EntryField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryField.swift; sourceTree = "<group>"; };
 		FF19BC2827D7BB760083688B /* HostsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostsList.swift; sourceTree = "<group>"; };
 		FF19BC2C27D7DA210083688B /* Telnet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telnet.swift; sourceTree = "<group>"; };
+		FF19BC2F27D8C7E80083688B /* Wol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wol.swift; sourceTree = "<group>"; };
+		FF6EE7AE27D92C45006E40B2 /* RequestString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,7 +233,9 @@
 			isa = PBXGroup;
 			children = (
 				FF19BC1727D779B70083688B /* Host.swift */,
+				FF6EE7AE27D92C45006E40B2 /* RequestString.swift */,
 				FF19BC2C27D7DA210083688B /* Telnet.swift */,
+				FF19BC2F27D8C7E80083688B /* Wol.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -425,6 +433,7 @@
 				FF19BC2D27D7DA210083688B /* Telnet.swift in Sources */,
 				FF19BC0427D744610083688B /* Theme.swift in Sources */,
 				FF19BBDB27D5F5240083688B /* ViaControlApp.swift in Sources */,
+				FF19BC3027D8C7E80083688B /* Wol.swift in Sources */,
 				FF19BC2327D780210083688B /* AddNewHost.swift in Sources */,
 				FF19BBFE27D742300083688B /* Get.swift in Sources */,
 				FF19BC0127D7423C0083688B /* Set.swift in Sources */,
@@ -433,6 +442,7 @@
 				FF19BC1827D779B70083688B /* Host.swift in Sources */,
 				FF19BBF827D6288A0083688B /* Setup.swift in Sources */,
 				FF19BC1E27D77D230083688B /* UserDefaults+Ext.swift in Sources */,
+				FF6EE7AF27D92C45006E40B2 /* RequestString.swift in Sources */,
 				FF19BBEA27D5F94E0083688B /* TelnetManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +457,7 @@
 				FF19BC2E27D7DA210083688B /* Telnet.swift in Sources */,
 				FF19BC0527D744610083688B /* Theme.swift in Sources */,
 				FF19BBDC27D5F5240083688B /* ViaControlApp.swift in Sources */,
+				FF19BC3127D8C7E80083688B /* Wol.swift in Sources */,
 				FF19BC2427D780210083688B /* AddNewHost.swift in Sources */,
 				FF19BBFF27D742300083688B /* Get.swift in Sources */,
 				FF19BC0227D7423C0083688B /* Set.swift in Sources */,
@@ -455,6 +466,7 @@
 				FF19BC1927D779B70083688B /* Host.swift in Sources */,
 				FF19BBF927D6288A0083688B /* Setup.swift in Sources */,
 				FF19BC1F27D77D230083688B /* UserDefaults+Ext.swift in Sources */,
+				FF6EE7B027D92C45006E40B2 /* RequestString.swift in Sources */,
 				FF19BBEB27D5F94E0083688B /* TelnetManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

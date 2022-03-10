@@ -10,8 +10,8 @@ import Foundation
 struct Host: Codable, Hashable {
     //var id = UUID()
     var hostName : String
-    var hostAdress : String
+    var hostAddress : String
     var login: String
     var password: String
-    var isActive: Bool
+    var macAddress: String?
 }

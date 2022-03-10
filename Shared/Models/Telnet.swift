@@ -27,10 +27,12 @@ final class Telnet {
                     return (false, "Что то не то \(error.localizedDescription)")
             }
         }
-   
-   
-    func sendRequest(_ request: String) -> (success: Bool, response : String) {
-        guard let client = client?.send(string: request) else {return (false, "Проверь строку подключения") }
+    //func sendRequest(_ request: String) -> (success: Bool, response : String)
+    func sendRequest(_ data: RequestString) -> (success: Bool, response : String) {
+        
+        let connectionString  = "<P><UN>\(data.login)</UN><Pwd>\(data.password)</Pwd><Cmd>\(data.cmd)</Cmd><P1>\(data.P1)</P1><P 2>\(data.P2)</P2><P3>\(data.P3)</P3><P4></P4><P5></P5><P6></P6><P7></P7><P8></P8><P9></P9><P10></P10></P>"
+        
+        guard let client = client?.send(string: connectionString) else {return (false, "Проверь строку подключения") }
             switch client {
                 case .success:
                     guard let text = readResponse() else {
@@ -44,14 +46,12 @@ final class Telnet {
     func closeConnection() {
         client?.close()
     }
-        
+     
+    
     private func readResponse() -> String? {
         guard let response = client?.read(1024*10, timeout: 10) else { return nil }
         return String(bytes: response, encoding: .utf8)
     }
-    
-     
-    
     
     deinit {
           client?.close()

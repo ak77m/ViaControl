@@ -9,7 +9,6 @@ import SwiftUI
 
 struct Info: View {
     @EnvironmentObject var info : InfoManager
-    @ObservedObject var request : TelnetManager
     
     var body: some View {
        
@@ -18,20 +17,20 @@ struct Info: View {
             Form {
                 Section("Подключение") {
                     Text("Комната : \(info.activeHost.hostName)")
-                    Text("Адрес   : \(info.activeHost.hostAdress)")
+                    Text("Адрес   : \(info.activeHost.hostAddress)")
                     Text("Логин   : \(info.activeHost.login)")
                     Text("Пароль  : \(info.activeHost.password)")
                     
                 }
                 
                 Section("Статус устройства") {
-                    Text("Соединение : \(request.isConnected ? "Успешно" : "Нет соединения" )")
-                    Text("Авторизация: \(request.isLogged ? "Успешно" : "Нет соединения" )")
+                    Text("Соединение : \(info.isConnected ? "Успешно" : "Нет соединения" )")
+                    Text("Авторизация: \(info.isLogged ? "Успешно" : "Нет соединения" )")
                 }
                 
                 Section("Ответ") {
-                    Text(request.loginString)
-                    Text(request.resultString)
+                    Text(info.loginString)
+                    Text(info.resultString)
                 }
                 
                 
@@ -47,6 +46,6 @@ struct Info: View {
 
 struct Info_Previews: PreviewProvider {
     static var previews: some View {
-        Info(request: TelnetManager())
+        Info()
     }
 }

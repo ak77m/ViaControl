@@ -14,13 +14,10 @@ struct MainView: View {
     init(){
            Theme.navigationBarColors(background: .darkGray, titleColor: .white)
            UITabBar.appearance().backgroundColor = UIColor.darkGray
-           UITabBar.appearance().barTintColor = UIColor.green
            UITabBar.appearance().unselectedItemTintColor = UIColor.white
-           UITabBar.appearance().tintColor = UIColor.green
         }
     
     @EnvironmentObject var info : InfoManager
-    @StateObject var request = TelnetManager()
     
     
     @State private var selection = 0
@@ -28,45 +25,34 @@ struct MainView: View {
     var body: some View {
         ZStack {
                 TabView(selection: $selection){
-                    Info(request: request)
-                        .tag(0)
+                    Info()
                         .tabItem {
                             Image(systemName: "info.circle")
                             Text("Info")
                         }
-                    Get(request: request)
-                        .tag(1)
+                    Get()
                         .tabItem {
                             Image(systemName: "square.and.arrow.down.on.square")
-                            Text("Get")
+                            Text("Сontrol")
                         }
                     Spacer ()
                    
                     Set()
-                        .tag(2)
                         .tabItem {
                             Image(systemName: "square.and.arrow.up")
                             Text("Set")
                         }
                     Setup()
-                        .tag(3)
                         .tabItem {
                             Image(systemName: "gear")
                             Text("Setup")
                         }
                 }
-                
                 .navigationBarTitleDisplayMode(.inline)
-                //.accentColor(.green)
                 .navigationViewStyle(StackNavigationViewStyle())
             
             VStack {
                 Spacer()
-                // Connection button
-//                Button(action: {
-//                    request.connectTo = info.activeHost
-//                    request.login()
-     //           }) {
                    Image(systemName: "point.3.connected.trianglepath.dotted")
                         .renderingMode(.original)
                         .resizable()
@@ -75,13 +61,10 @@ struct MainView: View {
                         .background(Circle().fill(.gray))
                         .overlay(Circle()
                                     .stroke(.foreground, lineWidth: 4))
-                        .foregroundColor(request.isLogged ? .green : .white)
+                        .foregroundColor(info.isLogged ? .green : .white)
                         .onTapGesture {
-                            request.connectTo = info.activeHost
-                            request.login()
+                            info.login()
                         }
-             //   }
-                
             }
         }
         //.foregroundColor(.white)

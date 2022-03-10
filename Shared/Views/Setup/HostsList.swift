@@ -9,15 +9,27 @@ import SwiftUI
 
 struct HostsList: View {
     @EnvironmentObject var info : InfoManager
-    
+    @State var selection : String?
     var body: some View {
-        
+    
+//        Menu(content: {
+//            ForEach(info.hosts,  id: \.self) { item in
+//                VStack(alignment: .leading){
+//                    Text(item.hostName).fontWeight(.bold)
+//                    Text("\(item.hostAdress) пользователь: \(item.login)").font(.footnote)
+//                }
+//                .onTapGesture { selectItem(item) }
+//            }
+//            .onDelete(perform: deleteHost)
+//        }, label: {
+//            Text(" q ")
+//        })
         ForEach(info.hosts,  id: \.self) { item in
-            VStack(alignment: .leading){
-                Text(item.hostName).fontWeight(.bold)
-                Text("\(item.hostAdress) пользователь: \(item.login)").font(.footnote)
-            }
-            .onTapGesture { selectItem(item) }
+                VStack(alignment: .leading){
+                    Text(item.hostName).fontWeight(.bold)
+                    Text("\(item.hostAddress) пользователь: \(item.login)").font(.footnote)
+                }
+                .onTapGesture { selectItem(item) }
         }
         .onDelete(perform: deleteHost)
     }

@@ -18,7 +18,7 @@ struct AddNewHost: View {
             VStack(spacing: 15.0) {
                 EntryField(sfSymbolName: "doc", placeHolder: "Название комнаты", field: $info.name)
                 EntryField(sfSymbolName: "link", placeHolder: "IP адрес", field: $info.link)
-                EntryField(sfSymbolName: "person", placeHolder: "Логин", field: $info.login)
+                EntryField(sfSymbolName: "person", placeHolder: "Логин", field: $info.loginName)
                 EntryField(sfSymbolName: "key", placeHolder: "Пароль", field: $info.password)
             }
             .padding()
