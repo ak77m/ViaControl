@@ -17,7 +17,7 @@ struct MainView: View {
            UITabBar.appearance().unselectedItemTintColor = UIColor.white
         }
     
-    @EnvironmentObject var info : InfoManager
+   // @EnvironmentObject var info : InfoManager
     
     
     @State private var selection = 0
@@ -35,8 +35,7 @@ struct MainView: View {
                             Image(systemName: "square.and.arrow.down.on.square")
                             Text("Сontrol")
                         }
-                    Spacer ()
-                   
+
                     Set()
                         .tabItem {
                             Image(systemName: "square.and.arrow.up")
@@ -51,21 +50,21 @@ struct MainView: View {
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationViewStyle(StackNavigationViewStyle())
             
-            VStack {
-                Spacer()
-                   Image(systemName: "point.3.connected.trianglepath.dotted")
-                        .renderingMode(.original)
-                        .resizable()
-                        .frame(width: 30, height: 30, alignment: .center)
-                        .padding()
-                        .background(Circle().fill(.gray))
-                        .overlay(Circle()
-                                    .stroke(.foreground, lineWidth: 4))
-                        .foregroundColor(info.isLogged ? .green : .white)
-                        .onTapGesture {
-                            info.login()
-                        }
-            }
+//            VStack {
+//                Spacer()
+//                   Image(systemName: "point.3.connected.trianglepath.dotted")
+//                        .renderingMode(.original)
+//                        .resizable()
+//                        .frame(width: 30, height: 30, alignment: .center)
+//                        .padding()
+//                        .background(Circle().fill(.gray))
+//                        .overlay(Circle()
+//                                    .stroke(.foreground, lineWidth: 4))
+//                        .foregroundColor(info.isLogged ? .green : .white)
+//                        .onTapGesture {
+//                            info.login()
+//                        }
+//            }
         }
         //.foregroundColor(.white)
     }

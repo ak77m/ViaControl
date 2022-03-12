@@ -14,6 +14,7 @@ struct Info: View {
        
         
         NavigationView{
+            
             Form {
                 Section("Подключение") {
                     Text("Комната : \(info.activeHost.hostName)")
@@ -33,13 +34,19 @@ struct Info: View {
                     Text(info.resultString)
                 }
                 
-                
+                Button(action: {
+                    //
+                }, label: {Text("Connect")})
+                    .padding(.horizontal)
+                    .overlay(Capsule(style: .continuous)
+                                .stroke(.white, lineWidth: 1))
             }
-            
-            
             .navigationBarTitle("Адрес \(info.activeHost.hostName)")
             .navigationBarTitleDisplayMode(.inline)
         }
+        
+        
+        
         
     }
 }

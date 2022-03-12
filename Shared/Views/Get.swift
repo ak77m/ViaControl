@@ -10,22 +10,37 @@ import SwiftUI
 struct Get: View {
     @EnvironmentObject var info : InfoManager
     @State var macAddress : String = ""
+    @State var wolIs = false
+    
     
     var body: some View {
         NavigationView{
-            VStack(alignment: .center, spacing: 8.0) {
-                Button(action: {
-//                    info.request("<P><UN>su</UN><Pwd></Pwd><Cmd>PowerOff</Cmd><P1></P1><P2></P2><P3>< /P3><P4></P4><P5></P5><P6></P6><P7></P7><P8></P8><P9></P9><P10></P10></P>")
+            
+            Form {
+                Section("Управление питанием \(info.activeHost.hostName)") {
+                    Toggle("Послать команду WOL", isOn: $wolIs)
+                    Toggle("Перезапустить", isOn: $wolIs)
+                    Toggle("Выключить", isOn: $wolIs)
                     
-                }, label: {Text("Power OFF")})
-                
-                Button(action: {
-                    let computer = Wol.Device(MAC: macAddress, BroadcastAddr: "255.255.255.255", Port: 9)
-                    _ = Wol.target(device: computer)
+                    //                    Text("Комната : \(info.activeHost.hostName)")
+                    //                    Text("Адрес   : \(info.activeHost.hostAddress)")
+                    //                    Text("Логин   : \(info.activeHost.login)")
+                    //                    Text("Пароль  : \(info.activeHost.password)")
                     
-                }, label: {Text("Power On WOL")})
+                }.toggleStyle(.switch)
                 
-                TextField("MAC address", text: $macAddress)
+                //                VStack(alignment: .center, spacing: 8.0) {
+                //                    Button(action: {
+                //                        //                    info.request("<P><UN>su</UN><Pwd></Pwd><Cmd>PowerOff</Cmd><P1></P1><P2></P2><P3>< /P3><P4></P4><P5></P5><P6></P6><P7></P7><P8></P8><P9></P9><P10></P10></P>")
+                //
+                //                    }, label: {Text("Power OFF")})
+                //
+                //                    Button(action: {
+                //                        _ = Wol.send.toTarget(MAC: macAddress)
+                //
+                //                    }, label: {Text("Power On WOL")})
+                //
+                //                    TextField("MAC address", text: $macAddress)
             }
             .padding()
             .navigationBarTitle("Ощие настройки")
